@@ -113,22 +113,22 @@ const Reviews = () => {
       render: (text, record) => (
         <div className="flex space-x-2">
           <Button
-            shape="circle"
+           
             icon={<EyeOutlined />}
             onClick={() => {
               setSelectedReview(record);
               setReviewerDetailsModalVisible(true);
             }}
-            className="bg-red-100 hover:bg-red-200 border-none"
+            className="!bg-red-500 !text-white border-none"
           />
           <Button
-            shape="circle"
+            
             icon={<StopOutlined />}
             onClick={() => {
               setSelectedReview(record);
               setBlockModalVisible(true);
             }}
-            className="bg-red-100 hover:bg-red-200 border-none"
+            className="!bg-red-500 !text-white  border-none"
           />
         </div>
       ),
@@ -177,20 +177,22 @@ const Reviews = () => {
 
         {/* Block Modal */}
         <Modal
-          title="Block User"
+          
           visible={blockModalVisible}
           onCancel={handleBlockModalCancel}
-          footer={[
-            <Button key="cancel" onClick={handleBlockModalCancel}>
-              Cancel
-            </Button>,
-            <Button key="block" type="primary" danger>
-              Block
-            </Button>,
-          ]}
+          footer={
+            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
+              <Button key="block" type="primary" danger style={{ marginBottom: '8px' }}>
+                Block
+              </Button>
+              <Button key="cancel" className='!bg-black !text-white' onClick={handleBlockModalCancel}>
+                Unblock
+              </Button>
+            </div>
+          }
         >
           {selectedReview && (
-            <p>Are you sure you want to block {selectedReview.userName}?</p>
+            <p className='text-center font-semibold'>Are you sure you want to block {selectedReview.userName}?</p>
           )}
         </Modal>
       </div>

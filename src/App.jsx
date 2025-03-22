@@ -42,14 +42,14 @@ function App() {
           <Route path="/user-management" element={<UserManagement />}></Route>
           <Route path="/my-details" element={<MyDetails/>}></Route>
           <Route path="/restaurant-details" element={<RestaurantDetails/>}></Route>
-          <Route path="/reviews" element={<Reviews/>}></Route>
-          <Route path="/social-media" element={<SocialMedia/>}></Route>
-          <Route path="/business-hours" element={<BusinessHours/>}></Route>
-          <Route path="/party" element={<Party/>}></Route>
-          <Route path="/cuisine" element={<Cuisine/>}></Route>
-          <Route path="/restaurant-agreement" element={<ReservationsAgreement/>}></Route>
-          <Route path="/menu-items" element={<MenuItems/>}></Route>
-          <Route path="/restaurant-features" element={<RestaurantFeatures/>}></Route>
+          <Route path="/restaurant/reviews" element={<Reviews/>}></Route>
+          <Route path="/restaurant/social-media" element={<SocialMedia/>}></Route>
+          <Route path="/restaurant/business-hours" element={<BusinessHours/>}></Route>
+          <Route path="/restaurant/party" element={<Party/>}></Route>
+          <Route path="/restaurant/cuisine" element={<Cuisine/>}></Route>
+          <Route path="/restaurant/restaurant-agreement" element={<ReservationsAgreement/>}></Route>
+          <Route path="/restaurant/menu-items" element={<MenuItems/>}></Route>
+          <Route path="/restaurant/restaurant-features" element={<RestaurantFeatures/>}></Route>
 
         </Route>
         <Route path="/login" element={<LoginPage />}></Route>
