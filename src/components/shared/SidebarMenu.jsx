@@ -157,8 +157,20 @@ const SidebarMenu = () => {
                     : ""
                 } 
               >
-                <Link to="/business-hours" className="text-[18px]">
+                <Link to="/restaurant/business-hours" className="text-[18px]">
                   Business Hours
+                </Link>
+              </Menu.Item>
+              <Menu.Item
+                key="reviews"
+                className={
+                  activeKey === "reviews"
+                    ? "!bg-red-500 !text-white"
+                    : ""
+                } 
+              >
+                <Link to="/restaurant/reviews" className="text-[18px]">
+                  Reviews
                 </Link>
               </Menu.Item>
               <Menu.Item
@@ -167,7 +179,7 @@ const SidebarMenu = () => {
                   activeKey === "cuisine" ? "!bg-red-500 !text-white" : ""
                 } 
               >
-                <Link to="/cuisine" className="text-[18px]">
+                <Link to="/restaurant/cuisine" className="text-[18px]">
                   Cuisine
                 </Link>
               </Menu.Item>
@@ -177,7 +189,7 @@ const SidebarMenu = () => {
                   activeKey === "party" ? "!bg-red-500 !text-white" : ""
                 }
               >
-                <Link to="/party" className="text-[18px]">
+                <Link to="/restaurant/party" className="text-[18px]">
                   Party
                 </Link>
               </Menu.Item>
@@ -187,7 +199,7 @@ const SidebarMenu = () => {
                   activeKey === "social-media" ? "!bg-red-500 !text-white" : ""
                 }
               >
-                <Link to="/social-media" className="text-[18px]">
+                <Link to="/restaurant/social-media" className="text-[18px]">
                   Social Media
                 </Link>
               </Menu.Item>
@@ -199,7 +211,7 @@ const SidebarMenu = () => {
                     : ""
                 }
               >
-                <Link to="/restaurant-features" className="text-[18px]">
+                <Link to="/restaurant/restaurant-features" className="text-[18px]">
                   Restaurant Features
                 </Link>
               </Menu.Item>
@@ -211,7 +223,7 @@ const SidebarMenu = () => {
                     : ""
                 }
               >
-                <Link to="/restaurant-agreement" className="text-[18px]">
+                <Link to="/restaurant/restaurant-agreement" className="text-[18px]">
                   Restaurant Agreement
                 </Link>
               </Menu.Item>
@@ -221,7 +233,7 @@ const SidebarMenu = () => {
                   activeKey === "menu-items" ? "!bg-red-500 !text-white" : ""
                 }
               >
-                <Link to="/menu-items" className="text-[18px]">
+                <Link to="/restaurant/menu-items" className="text-[18px]">
                   Menu Items
                 </Link>
               </Menu.Item>
